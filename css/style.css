@@ -266,7 +266,7 @@ a {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    z-index: 5;
+    z-index: 3;
   }
 }
 @media screen and (max-width: 375px) {
@@ -370,7 +370,7 @@ a {
 .nav__icon {
   display: none;
   width: 50px;
-  z-index: 5;
+  z-index: 3;
   cursor: pointer;
   margin: 0 auto;
   padding: 10px 0;
@@ -389,7 +389,7 @@ a {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    z-index: 5;
+    z-index: 3;
   }
   .nav__icon:hover, .nav__icon:focus {
     text-shadow: 0 0 5px #fff;
@@ -412,7 +412,7 @@ a {
     width: 100vw;
     height: 88vh;
     flex-direction: column;
-    z-index: 1;
+    z-index: 3;
     background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
   }
 }
@@ -751,7 +751,7 @@ a {
 @media screen and (max-width: 600px) {
   .news__slider .slick-prev {
     left: 20px;
-    z-index: 10;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 450px) {
@@ -768,7 +768,7 @@ a {
 @media screen and (max-width: 600px) {
   .news__slider .slick-next {
     right: 20px;
-    z-index: 10;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1269,7 +1269,7 @@ a {
 }
 
 .up-button {
-  z-index: 3;
+  z-index: 2;
   background-color: #fff;
   border-color: #7e5aff;
   margin: 0;
