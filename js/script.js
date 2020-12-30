@@ -86,11 +86,14 @@
     // Validation submit form
     let regex = {
       name: /^[a-zA-Z\s]{2,30}$/,
-      email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/}
+      email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    }
+
     function validateField(val, fieldName) {
       let pattern = regex[fieldName];
       return pattern.test(val);
     }
+
     $('#form').on('submit', function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -135,6 +138,20 @@
       if (scroll > offset) {
         $('#contact').fadeIn(1500);
       }
+    });
+    
+    // Smooth scrolling after clicking on the "CONTACT" link
+    $('a[href="#contact"]').on('click', function (e) {
+      e.preventDefault();
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        $('html, body').stop().animate({
+          scrollTop: $('#contact').offset().top
+        }, 500);
+      }
+      else if (window.matchMedia('(min-width: 769px)').matches)
+        $('html, body').stop().animate({
+          scrollTop: $('#map-about').offset().top + $('#map-about').height() / 2
+        }, 500);
     });
 
     // Convert address tags to google map links
