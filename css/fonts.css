@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Gotham Bold";
+  src: local("Gotham Bold"), local("Gotham-Bold"),
+  url('../fonts/gotham_bold.woff2') format('woff2'),
+  url('../fonts/gotham_bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}/*"Gotham Bold"*/
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: local("Gotham Medium"), local("Gotham-Medium"),
+  url('../fonts/gotham_medium.woff2') format('woff2'),
+  url('../fonts/gotham_medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}/*"Gotham Medium"*/
+
+@font-face {
+  font-family: "Gotham Book";
+  src: local("Gotham Book"), local("Gotham-Book"),
+  url('../fonts/gotham_book.woff2') format('woff2'),
+  url('../fonts/gotham_book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}/*"Gotham Book"*/
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fonts/fa-brands-400.woff2') format('woff2'),
+  url('../fonts/fa-brands-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Solid';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-solid-400.woff2") format("woff2"),
+  url("../fonts/fa-solid-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-regular-400.woff2") format("woff2"),
+  url("../fonts/fa-regular-400.woff") format("woff");
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+
+.fas {
+  font-family: 'Font Awesome 5 Solid';
+  font-weight: 400;
+}
+
+.far {
+  font-family: 'Font Awesome 5 Regular';
+  font-weight: 400;
+}
